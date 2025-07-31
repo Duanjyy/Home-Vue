@@ -11,23 +11,6 @@
             </li>
           </ul>
         </div>
-        <div class="github-info">
-          <h3>开源地址</h3>
-          <a href="https://github.com/JLinMr/Home-Vue" target="_blank" class="github-link">
-            <i class="fab fa-github"></i> Github
-          </a>
-        </div>
-        <div class="update-info">
-          <h3>最近更新</h3>
-          <ul class="update-list">
-            <li v-if="loading" class="loading-item">
-              <div class="loading-spinner"></div>
-            </li>
-            <li v-for="(update, index) in lastUpdates" :key="index" class="update-item">
-              {{ update.message }} <span v-if="update.date"> ({{ update.date }})</span>
-            </li>
-          </ul>
-        </div>
       </div>
       <button @click="closeModal" class="close-btn">
         <i class="fas fa-times"></i>
